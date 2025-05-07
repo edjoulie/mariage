@@ -20,7 +20,8 @@ import { HTMLElementRefOf } from "@plasmicapp/react-web";
 //
 // You can also stop extending from DefaultBlogPostProps altogether and have
 // total control over the props for your component.
-export interface BlogPostProps extends DefaultBlogPostProps {}
+export type BlogPostProps = DefaultBlogPostProps;
+
 
 function BlogPost_(props: BlogPostProps, ref: HTMLElementRefOf<"div">) {
   // Use PlasmicBlogPost to render this component as it was
